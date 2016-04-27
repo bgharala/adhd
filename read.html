@@ -1,0 +1,97 @@
+<doctype HTML>
+<head>
+<title>Reading Sample</title>
+<link rel="stylesheet" type="text/css" href="btn.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+.highlight
+{
+background-color:yellow;
+}
+
+p
+{
+
+padding-left: 30px;
+max-width: 75%
+}
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script>
+jQuery(function(){
+    
+	jQuery("p,h1,h2,h3,h4,li,.para").bind('click',function(){
+    //jQuery('.para').bind('click',function(){
+           
+           var elm=jQuery(this);
+           if(elm.hasClass('highlight'))
+           {
+              elm.removeClass('highlight')
+           }
+           else
+           { 
+                 jQuery('.highlight').removeClass('highlight');
+                 elm.addClass('highlight');
+           }
+   });
+    
+});
+</script>
+
+</head>
+<body>
+
+
+<!-- Article begins-->
+
+<h1>Lorem Ipsum</h1>
+<h4>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</h4>
+<h5>"There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."</h5>
+
+
+<hr /><div class="boxed"><!-- 
+
+
+If you want to use Lorem Ipsum within another program please contact us for details
+on our API rather than parse the HTML below, we have XML and JSON available.
+
+
+ --><div id="lipsum">
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac enim tellus. Donec nec eros ante. Nullam nec elementum felis. Proin sodales urna a nulla porta faucibus. Praesent tempor eget ex in commodo. Donec quis ullamcorper mauris. Nam erat nunc, scelerisque ac nulla at, posuere elementum quam. Nunc mauris est, fringilla quis sem semper, sagittis aliquet lectus. Praesent hendrerit, arcu non rutrum suscipit, nibh lacus ultricies diam, sed eleifend quam purus at justo. Integer sed ipsum tempor, accumsan ex vitae, efficitur sem. Integer non imperdiet felis, eu feugiat mauris. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+</p>
+<p>
+Nulla porta nibh augue, in scelerisque dolor sollicitudin at. Nullam at gravida ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris finibus erat in elit volutpat, vel suscipit augue aliquam. Donec finibus tincidunt ligula quis egestas. Etiam massa lacus, sodales vel enim non, rhoncus imperdiet nisi. Nam rutrum aliquet condimentum.
+</p>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ligula odio, facilisis sed leo ac, finibus pulvinar justo. Maecenas suscipit ullamcorper efficitur. Etiam auctor tellus sed ipsum porttitor laoreet. Duis tellus ligula, lobortis vitae lacinia in, feugiat sed velit. Cras dapibus erat sit amet enim congue, nec pulvinar turpis pretium. Maecenas tempor felis sed consectetur vestibulum. Integer quis facilisis augue. Quisque rhoncus sagittis laoreet. Nam sed lacus ultricies, fermentum ante id, eleifend quam. Nulla eu sem vel lectus ornare auctor. Aliquam id felis id eros consectetur finibus.
+</p>
+<p>
+Praesent faucibus nibh ut purus tristique, in pretium sem cursus. Vestibulum at ligula faucibus, vestibulum orci quis, aliquet urna. Proin nisi purus, tempor in sagittis bibendum, efficitur mattis purus. Ut vel finibus augue. Sed laoreet sapien erat, ac blandit eros eleifend in. Aenean molestie tempus mi vitae pellentesque. Morbi aliquam a ex sed vehicula.
+</p>
+<p>
+Suspendisse potenti. Nullam ante erat, finibus vel urna non, imperdiet sollicitudin massa. Integer finibus vel ipsum interdum posuere. Mauris ultricies malesuada dolor, et malesuada nisl ultricies sit amet. Maecenas efficitur purus a blandit consectetur. Aliquam erat volutpat. Morbi quis dictum augue, vel hendrerit metus. Cras nec arcu euismod, condimentum urna a, tempor turpis. Sed blandit dui quis neque sagittis commodo. In hac habitasse platea dictumst.
+</p>
+<p>
+Etiam ornare massa et scelerisque aliquet. Aliquam euismod enim quis elit efficitur molestie. Maecenas suscipit convallis fermentum. Vestibulum hendrerit euismod ligula, quis malesuada ipsum commodo ac. Maecenas tortor orci, facilisis ac egestas eget, congue ac dolor. Quisque ultricies risus sed nisi tincidunt, ac maximus massa venenatis. Sed tellus turpis, venenatis id consectetur vel, scelerisque a nisi. Suspendisse venenatis, turpis ac auctor molestie, quam nisl molestie turpis, et tempor quam augue elementum purus. Nullam finibus nisl nec velit varius facilisis. Ut et tellus a massa viverra congue eget vitae orci. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec aliquam ex lorem, vitae tincidunt nibh maximus quis. Quisque nisi tellus, venenatis sed nulla non, luctus convallis nisi. Nulla at enim sapien.
+</p>
+<p>
+Morbi quis lobortis massa. Aenean lacus diam, mollis non quam nec, scelerisque pharetra massa. Phasellus vehicula ex posuere tortor venenatis eleifend. Aenean sed ligula sit amet massa lobortis fringilla vel nec libero. Fusce sodales hendrerit risus in facilisis. Donec at commodo felis. Phasellus eleifend risus lectus, eu cursus metus ultrices vitae. Vivamus arcu nisi, interdum eget dui eget, fermentum blandit purus. Suspendisse et tortor quis massa venenatis gravida. Sed porttitor sem imperdiet lacinia eleifend. Vestibulum cursus orci quis risus sollicitudin, eu dictum enim malesuada. Donec aliquam mi eget ante finibus, ac rhoncus metus lacinia. Nulla sapien ante, bibendum vel elementum nec, scelerisque sollicitudin urna. Nunc vulputate sapien in tortor ultricies, id vehicula risus vestibulum. Integer sodales risus diam, eu vehicula felis pellentesque non. Aliquam molestie tortor sed neque condimentum, sed congue nulla aliquam.
+</p>
+<p>
+Praesent fringilla odio a enim ornare, ut hendrerit enim pretium. In vel elit a ante placerat elementum. Duis egestas blandit orci, vitae elementum lorem porta id. Suspendisse viverra vehicula pretium. In ac odio auctor, blandit lectus at, vulputate justo. Quisque eget odio vel erat venenatis laoreet. Quisque tempor erat sed venenatis rutrum. Mauris ultricies risus in odio bibendum fermentum. Nullam vulputate consequat ipsum, at tincidunt libero maximus in. Nam eget lobortis felis.
+</p>
+<p>
+Etiam molestie lobortis elit, et sollicitudin massa pellentesque eu. Maecenas enim ex, condimentum quis purus vitae, faucibus rhoncus est. Etiam posuere tortor ut interdum consectetur. Nunc et euismod lacus. Nulla ac erat porta, dapibus augue sed, sodales massa. Nam non molestie urna. Cras interdum erat in hendrerit facilisis.
+</p>
+<p>
+Fusce porta ante ut ex porttitor cursus. Duis mollis, leo quis tincidunt lacinia, diam metus dapibus lacus, non semper nisl felis eget massa. Phasellus dignissim iaculis nisl, sit amet tristique metus eleifend eget. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse in ipsum at turpis feugiat finibus. Morbi fermentum semper tellus eu sollicitudin. Mauris id mauris justo. Curabitur aliquet quam ac 
+<div id="generated">Generated 50 paragraphs, 4273 words, 28747 bytes of <a href="http://www.lipsum.com/" title="Lorem Ipsum">Lorem Ipsum</a></div>
+</div>
+
+
+
+</body>
+</html>
