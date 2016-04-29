@@ -6,3 +6,40 @@ body {
 #ButtonMenu {
 	margin: 20px 0px;
 }
+#header{
+position: fixed;
+margin-top: -180px;
+background-color: white;
+width: 100%;
+}
+#content{
+margin-top: 180px;
+}
+
+@media only screen and (max-width: 1150px) {
+    #header {
+        margin-top: -230px;
+    }
+	#content{
+		margin-top: 230px;
+	}
+	
+}
+@media only screen and (max-width: 660px) {
+    #header {
+        margin-top: -330px;
+    }
+	#content{
+		margin-top: 330px;
+	}
+	
+}
+@media only screen and (max-width: 480px) {
+    #header {
+        margin-top: -400px;
+    }
+	#content{
+		margin-top: 400px;
+	}
+	
+}
