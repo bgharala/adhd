@@ -5,17 +5,101 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+<script>
+var playstatic=0;
+var playcoffee=0;
+
+var staticmusic = new Audio('noise/static.mp3');
+
+//for seamless looping
+staticmusic.addEventListener('timeupdate', function(){
+                var buffer = .44;
+                if(this.currentTime > this.duration - buffer){
+                    this.currentTime = 0;
+                    this.play()
+                }}, false);
+
+staticmusic.loop=true;
+
+function playstaticfn()
+{
+if(playstatic==0)
+{
+  if(playcoffee==1)
+  {
+  coffeemusic.pause();
+  coffeemusic.currentTime=0.0;
+  playcoffee=0;
+  }
+staticmusic.play();
+playstatic=1;
+}
+else
+{
+staticmusic.pause();
+staticmusic.currentTime=0.0;
+playstatic=0;
+}
+}
+
+var coffeemusic = new Audio('noise/coffee.mp3');
+
+//seamless looping
+coffeemusic.addEventListener('timeupdate', function(){
+                var buffer = .44;
+                if(this.currentTime > this.duration - buffer){
+                    this.currentTime = 0;
+                    this.play()
+                }}, false);
+coffeemusic.loop=true;
+
+function playcoffeefn()
+{
+if(playcoffee==0)
+{
+  if(playstatic==1)
+  {
+  staticmusic.pause();
+  staticmusic.currentTime=0.0;
+  playstatic=0;
+  }
+  
+coffeemusic.play();
+playcoffee=1;
+}
+else
+{
+coffeemusic.pause();
+coffeemusic.currentTime=0.0;
+playcoffee=0;
+}
+}
+
+function allstop()
+{
+coffeemusic.pause();
+coffeemusic.currentTime=0.0;
+staticmusic.pause();
+staticmusic.currentTime=0.0;
+playcoffee=0;
+playstatic=0;
+}
+</script>
 
 <h1>Let's Focus</h1>
-<a href="adhd1.html" class="btn btn--s btn--blue">back<a>
+<a href="adhd1.html" class="btn btn--s btn--blue">back</a>
 </br>
-<a href="#" class="btn btn--full">TV noise<a>
+<a onclick="playstaticfn()" class="btn btn--full">TV noise</a>
 </br>
-<a href="#" class="btn btn--full">Coffee Shop<a>
+<a onclick="playcoffeefn()" class="btn btn--full">Coffee Shop
+</a>
 </br>
-<a href="#" class="btn btn--full">Static<a>
+<a onclick="playstaticfn()" class="btn btn--full">Static
+</a>
 </br>
-<a href="#" class="btn btn--full">None<a>
+<a onclick="allstop()" class="btn btn--full">None<a>
 
 </body>
+
+
 </html>
