@@ -1,16 +1,14 @@
 <doctype HTML>
 <head>
 <title>ADHD app </title>
-<link rel="stylesheet" type="text/css" href="btn.css">
+<link rel="stylesheet" type="text/css" href="styles/btn.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 <script>
 var playstatic=0;
 var playcoffee=0;
-
 var staticmusic = new Audio('noise/static.mp3');
-
 //for seamless looping
 staticmusic.addEventListener('timeupdate', function(){
                 var buffer = .44;
@@ -18,9 +16,7 @@ staticmusic.addEventListener('timeupdate', function(){
                     this.currentTime = 0;
                     this.play()
                 }}, false);
-
 staticmusic.loop=true;
-
 function playstaticfn()
 {
 if(playstatic==0)
@@ -41,9 +37,7 @@ staticmusic.currentTime=0.0;
 playstatic=0;
 }
 }
-
 var coffeemusic = new Audio('noise/coffee.mp3');
-
 //seamless looping
 coffeemusic.addEventListener('timeupdate', function(){
                 var buffer = .44;
@@ -52,7 +46,6 @@ coffeemusic.addEventListener('timeupdate', function(){
                     this.play()
                 }}, false);
 coffeemusic.loop=true;
-
 function playcoffeefn()
 {
 if(playcoffee==0)
@@ -74,7 +67,6 @@ coffeemusic.currentTime=0.0;
 playcoffee=0;
 }
 }
-
 function allstop()
 {
 coffeemusic.pause();
@@ -87,17 +79,15 @@ playstatic=0;
 </script>
 
 <h1>Let's Focus</h1>
-<a href="adhd1.html" class="btn btn--s btn--blue">back</a>
+<a href="https://www.youtube.com/watch?v=8mP5xOg7ijs" target="_blank" class="btn btn--full">TV noise</a>
 </br>
-<a onclick="playstaticfn()" class="btn btn--full">TV noise</a>
-</br>
-<a onclick="playcoffeefn()" class="btn btn--full">Coffee Shop
+<a href="javascript:void(0);" onclick="playcoffeefn()" class="btn btn--full">Coffee Shop
 </a>
 </br>
-<a onclick="playstaticfn()" class="btn btn--full">Static
+<a href="javascript:void(0);" onclick="playstaticfn()" class="btn btn--full">Static
 </a>
 </br>
-<a onclick="allstop()" class="btn btn--full">None<a>
+<a href="javascript:void(0);" onclick="allstop()" class="btn btn--full">None<a>
 
 </body>
 
