@@ -2,7 +2,7 @@
 adhd participatory design prototype
 http://infmgharala.com/focus/
 
-Final Prototype Functions
+Prototype Functions
 
 Eye tracker detects if user is falling asleep
 -webcam detects if eyes are closed and sends a vibration to a wearable
