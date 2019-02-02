@@ -1,21 +1,13 @@
 # adhd
-adhd participatory design prototype
+ADHD Participatory Design Prototype
 http://infmgharala.com/focus/
 
-Prototype Functions
+Prototype Functions for User Testing
 
-Eye tracker detects if user is falling asleep
--webcam detects if eyes are closed and sends a vibration to a wearable
+1. Take a break task (implemented by Myco). User clicks this button to take a break from reading. In 10 minutes an aleart appears on the screen asking, "You have been taking a break for 10 minutes; would you like to return to your task?"
 
-Reading Task - implemented by Brian - click paragraph to highlight.
-- press button to move hightlighted area to move to the next paragraph
-- also has the option to turn on text to speech
+2. Background Noise (implemented by Gowtham). This button allows the user to turn on background noise while reading.
 
-Take a break task - implemented by Myco.
--user clicks take a break
--in 10 minutes an aleart apear on the screen "you have been taking a break for 10 minutes would you like to return to your task?"
+3. Reading Task (implemented by Brian). This feature allows users to click each paragraph to highlight as the user reads. Pressing a button, the user can move the hightlighted area to move to the next paragraph. 
 
-Background Noise
--turn on background noise while reading
-
-Myco - combining reading task and take a break
+Other goals future prototype: an option to turn on text to speech; a heartrate monitor to reduce frustration and distractions; an eye tracker to detect if user is falling asleep.
